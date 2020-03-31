@@ -1,0 +1,278 @@
+/**{
+  box-sizing: border-box;
+  border: 1px solid black;
+}*/
+
+body,html{
+  background-color: #F2E3B3;
+  margin: 0px;
+}
+
+.NavBar{ /* main navbar that directs to all other pages*/
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 240px;
+  height: 100vh; /*viewport window = vh*/
+  background-color: #013A66;
+}
+
+/* possible colors
+1. #F2790D
+2. #E1AA13
+3. #01AFA6
+4. #055C6B
+5. #072446
+6. #013A66
+7. #D99414
+
+oranges
+1. #F2B705
+2. #F2E3B3
+3. #F29F05
+4. #F28705
+5. #D93D04
+6. #FF9702
+7. #D34C02
+8. #FEC901
+9. #FFF2DF
+10.#FEF2B8
+
+1. #b6cdf0
+2. #f0d8a5
+*/
+
+.profileImage{
+  /*just to get image in center*/
+  padding-left: 2.5vw;
+}
+
+.MiniTtile{
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+  padding-left: .5vw;
+}
+
+.ProfileText{
+  font-family: "Work Sans", sans-serif;
+  padding-left: 1vw;
+}
+
+a:link{
+  /*this was to color the text in the navbar */
+  text-decoration: none;
+  color: #F2E3B3;
+}
+
+a:visited{
+  /* i dont beleive this color is showing up at all*/
+  color:#F2E3B3;
+}
+
+.MainContainer{
+  margin-left: 240px;
+}
+
+.topBanner{
+  display: flex;
+  background-color: #013A66;
+  height: 12vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.material-icons.md-24{
+  /* for all the material icons i used different md's to differentiate how big they would be and what color*/
+  font-size: 24px;
+  color: #F29F05;
+}
+
+.material-icons.md-36{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  color: #a3a3a3;
+}
+
+.material-icons.md-18{
+  font-size: 24px;
+  color: #a3a3a3;
+}
+
+.material-icons.md-40{
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.MusicBar{
+  /*to fix the top navbar and getting it to the right size*/
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.PostContainer{
+  margin-left: 50px;
+}
+
+.Title{
+  font-family: "Lato", sans-serif;
+  font-size: 64pt;
+  margin-bottom: 0px;
+}
+
+.Sep{
+  /* the nike bar */
+  width: 95%;
+}
+
+.ActualPost{
+  margin-left: 70px;
+}
+
+.PFI{
+  /*profile image*/
+  width: 5%;
+  height: 5%;
+}
+
+.HeadSign{
+  font-family: "Work Sans", sans-serif;
+  font-size: 20pt;
+  display: flex;
+  align-items: center;
+}
+
+.Text{
+  margin-left: 70px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.Fav{
+  display: flex;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+}
+
+.FavSec{
+  display: flex;
+  margin-left: 65px;
+}
+
+.MImg{
+  margin-left: 60px;
+  width: 50%;
+}
+
+.dropdown{
+  display: none;
+}
+
+.Overflow{
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  body,html{
+    border: 3px solid #013A66;
+  }
+
+  .topBanner{
+    display: none;
+  }
+
+  .NavBar{
+    display: none;
+  }
+
+  .MainContainer{
+    margin-left: 0px;
+  }
+
+
+
+  .Sep{
+    display: none;
+  }
+
+  .Separator{
+    display: none;
+  }
+
+  .Title{
+  }
+
+  .material-icons.md1{
+    font-size: 60px;
+    display: flex;
+    align-items: flex-end;
+  }
+  /* Menu */
+  .Overflow{
+    background-color: #013A66;
+    display: block;
+  }
+
+  .MobileImg{
+    margin-left: 400px;
+  }
+
+  .dropbtn {
+
+    background-color: #013A66;
+    font-family: "Lato", sans-serif;
+    color: White;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .dropdown {
+
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #013A66;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: #F29F05;
+    font-family: "Work Sans", sans-serif;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #F2E3B3;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* end menu */
+
+  /*Posts*/
+
+  .PostContainer{
+  }
+
+  .PFI{
+    width: 10%;
+    height: 10%;
+  }
+
+  .Text{
+    margin-left: 20px;
+  }
+}
